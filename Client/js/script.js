@@ -201,6 +201,7 @@ $(function () {
         let h = today.getHours();
         let min = today.getMinutes();
         let sec = today.getSeconds();
+
         if (dd < 10) {
             dd = '0' + dd;
         }
@@ -208,7 +209,6 @@ $(function () {
             mm = '0' + mm;
         }
         today = yyyy + '/' + mm + '/' + dd + ' ' + h + ":" + min + ":" + sec;
-
 
         // JSON z wypożyczeniem
         var newLend = {
@@ -242,7 +242,6 @@ $(function () {
         $("#Newsletter").fadeOut(1500);
         $("#Newsletter").fadeIn(1500);
     }, 3000);
-    interval();
 });
 
 ///////////////////////////////////////////////////////////////////////////////////
